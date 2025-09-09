@@ -19,4 +19,39 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/singapore" />
+
+    <Button
+        android:id="@+id/Upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/upload"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/Discard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/discard"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Upload"
+        app:layout_constraintEnd_toStartOf="@+id/Upload" />
+
+    <TextView
+        android:id="@+id/cameraLabel"
+        android:layout_width="66dp"
+        android:layout_height="22dp"
+        android:text="@string/camera"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cameraType"
+        tools:layout_editor_absoluteX="43dp" />
+
+    <EditText
+        android:id="@+id/cameraType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/camera_value"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="464dp" />
 </android.support.constraint.ConstraintLayout>
